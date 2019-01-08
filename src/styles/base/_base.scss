@@ -1,0 +1,74 @@
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: $m-size;
+}
+.br {
+  //display: flex;
+  grid-row: 2 / 3;
+  grid-column: 2 / 13;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+tr {
+  display: table-row;
+}
+td {
+  display: table-cell;
+}
+input {
+  width: 100%;
+  //max-width: 50%;
+  margin: 0;
+  display: table-cell;
+  text-align: center;
+  border: none;
+}
+
+/* For Firefox */
+input[type='number'] {
+  -moz-appearance:textfield;
+}
+
+/* For Chrome */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+figure {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  background: #e6e6e6;
+  border-radius: .5rem;
+}
+
+
+button:disabled {
+  cursor: default;
+}
